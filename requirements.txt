@@ -1,0 +1,20 @@
+# Analysis stack (tested on Python 3.12 with the versions below; newer versions should also work)
+pandas>=2.0          # tested 3.1.1
+numpy>=1.26          # tested 2.5.5
+matplotlib>=3.8      # tested 3.11.2
+seaborn>=0.13        # tested 0.13.2
+scipy>=1.11          # tested 1.18.1
+
+# Needed by allensdk's import chain. allensdk itself is installed separately with --no-deps
+# (see README): its pinned numpy<1.24 / pandas==1.5.3 cannot be built on Python 3.12.
+requests
+requests-toolbelt
+simplejson
+six
+future
+SimpleITK
+xarray
+pynwb
+
+# Running the notebook locally
+jupyter
